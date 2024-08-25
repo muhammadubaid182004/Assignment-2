@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.text-center {
+    color: #9E78CF;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.task-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-task {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #3E1671;
+    color: white;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.add-task-btn {
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 5px 15px;
+    background-color: #9E78CF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.task-section {
+    width: 45%;
+}
+
+.task-title {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.task-list {
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #15101C;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.task-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15101C;
+    color: #9E78CF;
+    border-radius: 5px;
+}
+
+.task-item .fw-bold {
+    font-weight: bold;
+}
+
+.task-item .task-actions {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.task-item.done {
+    text-decoration: line-through;
+    color: #78CFB0;
+}
+
+.task-list::-webkit-scrollbar {
+    display: none;
+}
+
+
+.task-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15101C;
+    color: #9E78CF;
+    border-radius: 5px;
+    position: relative; /* Adjust position to allow for absolute positioning of icons */
+}
+
+.task-actions {
+    position: absolute;
+    right: 15px; /* Position the icons on the right side */
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
